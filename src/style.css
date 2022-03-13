@@ -10,7 +10,6 @@
     --black: #000;
 
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -21,275 +20,93 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
-
 /*INICIO HEADER*/
 header{
     height: 68px;
-}
-nav{
     width: 100%;
-    height: 52px;
     background-color: var(--dark-color);
-
-
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-
+/*Logo*/
+header picture{
+    width: 20%;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+header picture img{
+    width: 100%;
+    object-fit: cover;
+}
+/*Navegador*/
+nav{
+    position: relative;
+    width: 100%;
+    height: 52px;
+    background-color: var(--dark-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content:space-between;
+}
+/*Hamburguesa*/
+#btn-menu{
+    display: none;
+}
 nav picture{
-    width: 20%;    
+    width: 10%;    
     max-width: 124px;
     min-width: 100px;
-    margin-right: 4rem;
+    height: 100%;
 }
 nav picture img{
     max-width: 124px;
     min-width: 60px;
     width: 100%;
     max-height: 50px;
-    margin: auto 0;
+    margin: auto 0;    
 }
-
 nav .menu{
     max-width: 20px;
-    width: 100%;
-    margin-left: 2rem;    
+    width: 100%; 
 }
 nav .menu img{
-    height: 70%;
+    height: 100%;
     padding: 0.5rem 0;
-
 }
-
+nav .menu img:hover{
+    background-color: rgb(255,255,255,0.3);
+}
 
 nav ul{
-    display: none;
-}
-/*INICIO MAIN*/
-main{
-    margin: 2rem 3rem;
-}
-/*main Seccion 1*/
-main section:nth-child(1){
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.left-section h1{
-    color: var(--dark-color);
-    font-size: 6.4rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-.left-section h4{
-    color: var(--green-color);
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.left-section p{
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.left-section form{
-    width: 100%;
-    height: 9rem;
-    margin-bottom: 2rem;
-
-}
-.left-section form label input{
-    display: block;
-    height: 4rem;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid var(--gray);
-    margin-bottom: 1rem;
-}
-.left-section form button{
-    display: block;
-    height: 4rem;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.8rem;
-    border: none;
-    border-radius: 0.9rem;
-    color: var(--white);    
-    background-color: #98CA3F;
-}
-.right-section picture{
-    width: 50%;
-    height: auto;
-    overflow: hidden;
-}
-.right-section picture img{
-    width: 100%;
-    object-fit: cover;
-}
-
-/*main Seccion 2*/
-main section:nth-child(2){
-    display: flex;
-    flex-direction: column;
-}
-.first-section{
-    margin-bottom: 2rem;
-}
-.first-section h2{    
-    font-size: 3.6rem;
-    color: var(--dark-color);
-    margin-bottom: 2rem;
-}
-.first-section p br{
-    display: none;
-}
-.first-section p{
-    font-size: 2.2rem;
-    text-align: justify;
-}
-/*SECOND SECTION*/
-.second-section{
-    margin-bottom: 2rem;
-}
-
-.second-section h2{    
-    font-size: 3.6rem;
-    color: var(--dark-color);
-    margin-bottom: 3rem;
-    width: 100%;
-}
-.second-section .card{
-    color: var(--white);
-    /*width: 18.0rem;*/
-    width: 100%;
-    height: 12rem;
-    border-radius: 1.8rem;
-    background-color: var(--black);
-    margin: 0 auto 1rem auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.second-section .card h4{
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-}
-.second-section .card p{
-    font-size: 2.2rem;
-}
-
-/*THIRD SECTION*/
-.third-section{
-    margin-bottom: 2rem;
-}
-
-.third-section h2{    
-    font-size: 3.6rem;
-    color: var(--dark-color);
-    margin-bottom: 3rem;
-    width: 100%;
-}
-.third-section .card{
-    color: var(--white);
-    width: 100%;
-    height: 12rem;
-    border-radius: 1.8rem;
-    background-color: var(--black);
-    margin: 0 auto 1rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.third-section .card:nth-child(2){
-    background-color: var(--green-color);
-}
-.third-section .card:nth-child(3){
-    background-color: var(--sky-color);
-}
-.third-section .card:nth-child(4){
-    background-color: var(--pink-color);
-}
-.third-section .card h4{
-    font-size: 2.6rem;
-}
-.third-section .card p{
-    font-size: 2.2rem;
-}
-
-/*INICIO FOOTER*/
-footer{
     background-color: var(--dark-color);
+    position: absolute;
+    top: 5.8rem;
+    width: 70%;
+    left: -70%;   
 }
-footer .container{
-    margin: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+#btn-menu:checked ~ ul{
+    left: 0; 
 }
-
-footer picture{
-    width: 20%;    
-    max-width: 124px;
-    min-width: 100px;
-    margin: 1rem auto 1rem auto;    
-}
-footer picture img{
-    max-width: 124px;
-    min-width: 60px;
-    width: 100%;
-    max-height: 50px;
-    margin: auto 0;
-}
-
-footer p{
-    color: var(--white);
-    font-size: 1.8rem;
-    text-align: justify;
-    margin-bottom: 1rem;
-}
-footer p br{
-    display: none;
-}
-
-
-footer ul{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-footer ul li{
+nav ul li{
     list-style: none;
-    width: 100%;
-    height:5rem;
-    max-height: 5rem;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    height: 5rem;
+    border-top: 1px solid var(--white);
+    position: relative;
 }
-
-footer ul li a{
+nav ul li a{
+    position: absolute;
+    top: 25%;
     color: var(--white);
-    text-decoration: none;
-    height: 100%;
     width: 100%;
     display: block;
-    max-height: 4rem;
-    font-size: 1.8rem;
+    text-decoration: none;
+    font-size: 18px;
+    height: 100%;
+    margin-left: 2rem;
 }
-footer ul li a:hover{
+nav ul li a:hover{
+    cursor: pointer;
     color: var(--gray);
 }
