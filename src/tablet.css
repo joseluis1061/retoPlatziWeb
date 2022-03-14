@@ -1,0 +1,17 @@
+.second-section {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}    
+.second-section .card{
+    width: 18.0rem;
+}
+.third-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}    
+.third-section  .card{
+    width: 18.0rem;
+}
