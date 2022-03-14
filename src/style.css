@@ -106,6 +106,10 @@ nav ul li a:hover{
 }
 /************************/
 
+/*INICIO MAIN*/
+main{
+    margin: 2rem 3rem;
+}
 /*main Seccion 1*/
 main section:nth-child(1){
     width: 100%;
@@ -328,5 +332,3 @@ footer ul li a{
 footer ul li a:hover{
     color: var(--gray);
 }
-
-
