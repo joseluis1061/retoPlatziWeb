@@ -28,7 +28,7 @@ nav ul li a:hover{
     color: var(--gray);
 }
 
-
+/*Estilos al main*/
 main section:nth-child(1){
     flex-direction: row;
     flex-wrap: wrap;
