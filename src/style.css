@@ -10,7 +10,6 @@
     --black: #000;
 
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -21,52 +20,92 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
-
 /*INICIO HEADER*/
 header{
-    height: 68px;
-}
-nav{
+    height: 6.8rem;
     width: 100%;
-    height: 52px;
     background-color: var(--dark-color);
-
-
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-
-nav picture{
-    width: 20%;    
-    max-width: 124px;
-    min-width: 100px;
-    margin-right: 4rem;
+/*Logo*/
+.logo-header{
+    width: 40%;
+    max-height: 5.8rem;
+    margin-right: 2rem;
+    overflow: hidden;
 }
-nav picture img{
-    max-width: 124px;
-    min-width: 60px;
+.logo-header img{
+    width: 60%;    
+    object-fit: cover;
+}
+/*Navegador*/
+nav{
+    position: relative;
     width: 100%;
-    max-height: 50px;
-    margin: auto 0;
+    height: 52px;
+    background-color: var(--dark-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content:space-between;
+    align-items: center;
 }
-
+/*Hamburguesa*/
+#btn-menu{
+    display: none;
+}
 nav .menu{
     max-width: 20px;
     width: 100%;
-    margin-left: 2rem;    
 }
 nav .menu img{
-    height: 70%;
+    height: 100%;
+    object-fit: contain;
     padding: 0.5rem 0;
-
+    max-height: 50px;
+    max-width: 124px;
+    min-width: 100px;
 }
-
-
-nav ul{
-    display: none;
+nav .menu img:hover{
+    cursor: pointer;
+    background-color: rgb(255,255,255,0.3);
 }
+/*BARRA NAVEGACIÓN*/
+nav ul{    
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 5.8rem;
+    width: 70%;
+    left: -70%;   
+}
+#btn-menu:checked ~ ul{
+    left: 0; 
+}
+nav ul li{
+    list-style: none;
+    height: 5rem;
+    border-top: 1px solid var(--white);
+    position: relative;
+}
+nav ul li a{
+    position: absolute;
+    top: 25%;
+    color: var(--white);
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    height: 100%;
+    margin-left: 2rem;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: var(--gray);
+}
+/************************/
+
 /*INICIO MAIN*/
 main{
     margin: 2rem 3rem;

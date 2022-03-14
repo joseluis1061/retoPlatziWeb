@@ -1,33 +1,54 @@
-nav{
-    justify-content: flex-start;
+/*INICIO HEADER*/
+header{
+    height: 6.8rem;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
 }
+/*Logo*/
+.logo-header{
+    width: 20%;
+    order: 1;
+}
+.logo-header img{
+    width: 100%;
+    max-width: 12rem;    
+    object-fit: cover;
+    padding: 0 1.5rem;
+}
+
+/*Navegador*/
+nav{
+    order: 2;
+    position: static;
+    flex-direction: row;
+}
+
+/*Menu Hamburguesa*/
 nav .menu{
     display: none;
 }
-nav ul{
-
-    width: 80%;
-    height: 100%;
+/*BARRA NAVEGACIÓN*/
+nav ul{    
+    position: static;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
 }
 nav ul li{
-    list-style: none;
-    max-width: 64px;
-
+    width: inherit;
+    border-top: none;
+    
 }
 nav ul li a{
-    color: var(--white);
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    height: 100%;
-    padding: 25% 0;
+    display: inline;
+    max-width: 8rem;
 }
-nav ul li a:hover{
-    color: var(--gray);
-}
-
+/********************************/
 /*Estilos al main*/
 main section:nth-child(1){
     flex-direction: row;
@@ -100,5 +121,3 @@ footer picture{
 footer p br{
     display: block;
 }
-
-
