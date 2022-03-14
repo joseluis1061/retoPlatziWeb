@@ -163,6 +163,12 @@ main section:nth-child(1){
     color: var(--white);    
     background-color: #98CA3F;
 }
+.left-section form button:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
 .right-section picture{
     width: 50%;
     height: auto;
@@ -217,8 +223,12 @@ main section:nth-child(2){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 4px 4px rgba(102, 101, 101, 0.2);
 }
-
+.second-section .card:hover{
+    color: var(--green-color);
+    font-weight: bold;
+}
 .second-section .card h4{
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
@@ -249,6 +259,10 @@ main section:nth-child(2){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 3px 3px rgba(102, 101, 101, 0.2);
+}
+.third-section .card:hover{
+    text-decoration: underline;
 }
 .third-section .card:nth-child(2){
     background-color: var(--green-color);
@@ -269,9 +283,10 @@ main section:nth-child(2){
 /*INICIO FOOTER*/
 footer{
     background-color: var(--dark-color);
+    height: 100%;
 }
 footer .container{
-    margin: 2rem 3rem;
+    margin: 2rem 3rem 0 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
