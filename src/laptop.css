@@ -1,6 +1,6 @@
 /*INICIO HEADER*/
 header{
-    height: 6.8rem;
+    height: 68px;
     width: 100%;
     
     display: flex;
@@ -15,9 +15,9 @@ header{
 }
 .logo-header img{
     width: 100%;
-    max-width: 12rem;    
+    max-width: 120px;    
     object-fit: cover;
-    padding: 0 1.5rem;
+    padding: 0 15px;
 }
 
 /*Navegador*/
@@ -46,7 +46,7 @@ nav ul li{
 }
 nav ul li a{
     display: inline;
-    max-width: 8rem;
+    max-width: 80px;
 }
 /********************************/
 /*Estilos al main*/
@@ -61,7 +61,7 @@ main section:nth-child(1){
 }
 .right-section{
     width: 40%;
-    margin-left: 2rem;
+    margin-left: 20px;
 }
 .right-section picture{
     width: 100%;
@@ -77,18 +77,18 @@ main section:nth-child(1){
 }
 .left-section h4{
     text-align: left;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 .left-section p{
     font-size: 2.2rem;
     text-align: left;
-    margin-bottom: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .left-section form{
     width: 80%;
-    height: 9rem;
-    margin-bottom: 2rem;
+    height: 90px;
+    margin-bottom: 20px;
 }
 .left-section form label input{
     display: inline-block;
@@ -100,23 +100,23 @@ main section:nth-child(1){
     display: inline-block;
     width: 30%;
     text-align: center;
-    margin-left: 1rem;
+    margin-left: 10px;
 }
 
 .second-section .card{
-    width: 24.0rem;
-    height: 16rem;
+    width: 240px;
+    height: 160px;
 }
 
 
 .third-section .card{
-    width: 24.0rem;
-    height: 16rem;
+    width: 240px;
+    height: 160px;
 }
 
 
 footer picture{
-    margin: 1rem 0;
+    margin: 10px 0;
 }
 footer p br{
     display: block;
