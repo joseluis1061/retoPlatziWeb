@@ -2,7 +2,7 @@
 header{
     height: 68px;
     width: 100%;
-    
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,12 +50,19 @@ nav ul li a{
 }
 /********************************/
 /*Estilos al main*/
+
+main{
+    background-image: url("img/background1800x740.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 main section:nth-child(1){
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
+
 .left-section{
     width: 40%;
 }
@@ -114,9 +121,17 @@ main section:nth-child(1){
     height: 160px;
 }
 
-
+/*Inicio footer*/
+footer{
+    padding: 40px 40px;
+}
 footer picture{
-    margin: 10px 0;
+    margin: 40px 0;
+
+}
+footer p:nth-child(2) {
+    margin-bottom: 40px;
+    line-height: 30px;
 }
 footer p br{
     display: block;
