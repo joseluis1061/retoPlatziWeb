@@ -21,15 +21,16 @@ html{
 }
 
 /*INICIO HEADER*/
-header{
+header{   
     position:fixed;
     top:0;
-    height: 68px;
-    width: 100%;
-    background-color: var(--dark-color);
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 68px;
+    width: 100%;
+    background-color: var(--dark-color);
 }
 /*Logo*/
 .logo-header{
@@ -112,7 +113,7 @@ nav ul li a:hover{
 main{    
     position: relative;
     top: 4.8rem;
-    z-index: -1;
+    
     margin: 20px 30px;
 }
 /*main Seccion 1*/
@@ -248,10 +249,11 @@ main section:nth-child(2){
 }
 
 .third-section h2{    
-    font-size: 3.6rem;
-    color: var(--dark-color);
     margin-bottom: 30px;
     width: 100%;
+    font-size: 3.6rem;
+    color: var(--dark-color);
+
 }
 .third-section .card{
     color: var(--white);
@@ -280,6 +282,7 @@ main section:nth-child(2){
 }
 .third-section .card h4{
     font-size: 2.6rem;
+    text-align: center;
 }
 .third-section .card p{
     font-size: 2.2rem;
